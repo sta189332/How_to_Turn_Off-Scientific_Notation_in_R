@@ -1,0 +1,33 @@
+---
+title: "How to Turn Off Scientific Notation in R"
+author: "Daniel James"
+date: "`r Sys.Date()`"
+output: rmarkdown::github_document
+---
+  
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "",
+                      collapse = TRUE,
+                      #echo = FALSE,
+                      error = TRUE, # do not interrupt in case of errors
+                      message = FALSE,
+                      warning = FALSE,
+                      comma = function(x) format(x, digits = 2, big.mark = ",")
+)
+```
+
+
+[Here](https://www.statology.org/turn-off-scientific-notation-in-r/)
+
+You can use the following methods to turn off scientific notation in R;
+
+Method 1: Turn off scientific notation as global setting
+
+```{r load_packages, include = TRUE}
+
+library(tidymodels)
+library(skimr)
+library(tibble)
+library(knitr)
+```
